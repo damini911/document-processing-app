@@ -34,6 +34,7 @@
       padding: 8px 12px;
       gap: 8px;
       min-height: 0;
+      overflow: hidden;
     }
     header {
       flex: 0 0 auto;
@@ -148,9 +149,39 @@
       gap: 4px;
       margin-top: 4px;
     }
+    .app.has-files .controls {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow: hidden;
+    }
+    .app.has-files .top-row {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow: hidden;
+    }
+    .app.has-files .drop {
+      min-height: 0;
+      overflow: hidden;
+    }
     .app.has-files #file-list {
-      max-height: calc(100vh - 210px);
-      overflow: auto;
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow-y: scroll;
+      scrollbar-gutter: stable;
+      scrollbar-width: auto;
+      scrollbar-color: #1d4ed8 #e2e8f0;
+    }
+    .app.has-files #file-list::-webkit-scrollbar {
+      width: 12px;
+    }
+    .app.has-files #file-list::-webkit-scrollbar-track {
+      background: #e2e8f0;
+      border-radius: 8px;
+    }
+    .app.has-files #file-list::-webkit-scrollbar-thumb {
+      background: #1d4ed8;
+      border-radius: 8px;
+      border: 2px solid #e2e8f0;
     }
     .file-row {
       display: flex;
@@ -700,8 +731,7 @@
 
     function isCoverFile(name) {
       const n = String(name || "").toLowerCase().replace(/[^a-z0-9]+/g, "");
-      return n.includes("coverletter") || n.includes("coverpage")
-        || n.includes("valuationpkg") || n.includes("valuationpackage");
+      return n.includes("coverletter") || n.includes("coverpage") || n.includes("valuation");
     }
 
     function expandListed(meta, extra) {

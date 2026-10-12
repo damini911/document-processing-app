@@ -133,6 +133,10 @@ def test_packet_outline_labels_and_split():
     from services.file_order import display_label, should_split_pages
 
     assert should_split_pages("Cover Page.pdf", 2) is True
+    assert should_split_pages("222222_2024-Valuation.pdf", 15) is True
+    assert should_split_pages("800643_2025-Valuation-from-photos.pdf", 15) is True
+    assert display_label("222222_2024-Valuation.pdf", page=1, page_count=15) == "Cover Letter"
+    assert display_label("222222_2024-Valuation.pdf", page=15, page_count=15) == "Compliance Report 3"
     assert should_split_pages("Action Required.pdf", 3) is False
     assert should_split_pages("Compliance Reports.pdf", 3) is False
     assert should_split_pages("2024Census.pdf", 2) is False
