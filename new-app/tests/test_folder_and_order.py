@@ -235,7 +235,7 @@ def test_process_folder_uses_file_order(tmp_path, monkeypatch):
     reversed_names = list(reversed(names))
     ordered, _ = apply_file_order(uploads, reversed_names)
     with pytest.raises(HTTPException) as raised:
-        process_uploads(ordered, auto_order=False, extra_warnings=warnings)
+        process_uploads(ordered, auto_order=False, extra_warnings=warnings, check_assembly_stops=True)
     assert raised.value.status_code == 400
     assert "Assembly stopped" in raised.value.detail
 
@@ -250,7 +250,7 @@ def test_load_folder_and_process(tmp_path, monkeypatch):
 
     monkeypatch.setattr(save_service, "OUTPUT_DIR", tmp_path)
     with pytest.raises(HTTPException) as raised:
-        process_uploads(uploads, auto_order=True, extra_warnings=warnings)
+        process_uploads(uploads, auto_order=True, extra_warnings=warnings, check_assembly_stops=True)
     assert raised.value.status_code == 400
     assert "HCE Key Report" in raised.value.detail
     assert "Mutual of America stamp" in raised.value.detail

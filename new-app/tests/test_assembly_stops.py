@@ -64,7 +64,7 @@ def _run(tmp_path, monkeypatch, uploads):
     import services.save_service as save_service
 
     monkeypatch.setattr(save_service, "OUTPUT_DIR", tmp_path)
-    return process_uploads(uploads, auto_order=False)
+    return process_uploads(uploads, auto_order=False, check_assembly_stops=True)
 
 
 def _excel(plan_name: str) -> bytes:
@@ -96,6 +96,16 @@ def test_cover_date_is_set_without_the_retype_checkbox(tmp_path, monkeypatch):
         assert cover_date_text() in (saved[0].get_text("text") or "")
     finally:
         saved.close()
+
+
+def test_assembly_stops_stay_off_unless_requested(tmp_path, monkeypatch):
+    import services.save_service as save_service
+
+    monkeypatch.setattr(save_service, "OUTPUT_DIR", tmp_path)
+    doc = fitz.open()
+    _page(doc, "Census\nSSN 123-45-6789")
+    result = process_uploads([("census.pdf", _bytes(doc))], auto_order=False)
+    assert result.pdf_path
 
 
 def test_missing_hce_report_stops(tmp_path, monkeypatch):

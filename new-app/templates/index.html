@@ -546,6 +546,7 @@
         <div class="run-wrap">
           <label class="check"><input id="auto-order" type="checkbox" checked /> Auto-order</label>
           <label class="check"><input id="rewrite-sources" type="checkbox" /> Retype 402(g) dates and HCE %. The cover letter date is set to today on every Process.</label>
+          <label class="check"><input id="assembly-stops" type="checkbox" /> Assembly stops</label>
           <button id="run" type="button">Process package</button>
         </div>
       </div>
@@ -964,6 +965,7 @@
       }
       form.append("auto_order", document.getElementById("auto-order").checked ? "true" : "false");
       form.append("rewrite_sources", document.getElementById("rewrite-sources").checked ? "true" : "false");
+      form.append("check_assembly_stops", document.getElementById("assembly-stops").checked ? "true" : "false");
       files.forEach((item) => {
         form.append("item_name", item.name);
         form.append("item_page", item.page ? String(item.page) : "0");

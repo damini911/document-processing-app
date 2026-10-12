@@ -42,6 +42,7 @@ async def create_job(
     source_path: str = Form(default=""),
     auto_order: bool = Form(default=True),
     rewrite_sources: bool = Form(default=False),
+    check_assembly_stops: bool = Form(default=False),
     file_order: list[str] | None = Form(default=None),
     item_name: list[str] | None = Form(default=None),
     item_page: list[int] | None = Form(default=None),
@@ -90,6 +91,7 @@ async def create_job(
             extra_warnings=warnings,
             source_folder=folder or None,
             rewrite_sources=rewrite_sources,
+            check_assembly_stops=check_assembly_stops,
         )
     except HTTPException:
         raise

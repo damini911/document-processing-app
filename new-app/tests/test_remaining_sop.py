@@ -28,13 +28,14 @@ def _bytes(doc) -> bytes:
     return data
 
 
-def _process(tmp_path, monkeypatch, doc, source_folder=None):
+def _process(tmp_path, monkeypatch, doc, source_folder=None, check_assembly_stops=False):
     import services.save_service as save_service
 
     monkeypatch.setattr(save_service, "OUTPUT_DIR", tmp_path)
     return process_uploads(
         [("remaining-sop.pdf", _bytes(doc))],
         source_folder=source_folder,
+        check_assembly_stops=check_assembly_stops,
     )
 
 
@@ -242,7 +243,7 @@ def test_ssn_scan_stops_assembly(tmp_path, monkeypatch):
     from fastapi import HTTPException
 
     with pytest.raises(HTTPException) as raised:
-        _process(tmp_path, monkeypatch, build_remaining_sop_pdf(include_ssn=True))
+        _process(tmp_path, monkeypatch, build_remaining_sop_pdf(include_ssn=True), check_assembly_stops=True)
     assert raised.value.status_code == 400
     assert "Social Security number" in raised.value.detail
 

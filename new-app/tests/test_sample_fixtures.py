@@ -102,6 +102,6 @@ def test_assemble_split_current_fail_named_file(tmp_path, monkeypatch):
     monkeypatch.setattr(save_service, "OUTPUT_DIR", tmp_path)
     uploads = [(path.name, path.read_bytes()) for path in files]
     with pytest.raises(HTTPException) as raised:
-        process_uploads(uploads)
+        process_uploads(uploads, check_assembly_stops=True)
     assert raised.value.status_code == 400
     assert "Assembly stopped" in raised.value.detail

@@ -38,6 +38,7 @@ def process_uploads(
     extra_warnings: list[str] | None = None,
     source_folder: str | None = None,
     rewrite_sources: bool = False,
+    check_assembly_stops: bool = False,
 ) -> JobResult:
     """
     TEST23 pipeline:
@@ -118,15 +119,16 @@ def process_uploads(
                 else "SSN found on page(s) " + ", ".join(str(page) for page in ssn_pages),
             )
         )
-        reasons = assembly_stops.stop_reasons(
-            doc,
-            profile,
-            source_files=[name for name, _data in ordered],
-            excel_plan_name=excel_plan_name,
-            pdf_plan_name=pdf_plan_name,
-        )
-        if reasons:
-            raise HTTPException(status_code=400, detail="Assembly stopped.\n" + "\n".join(reasons))
+        if check_assembly_stops:
+            reasons = assembly_stops.stop_reasons(
+                doc,
+                profile,
+                source_files=[name for name, _data in ordered],
+                excel_plan_name=excel_plan_name,
+                pdf_plan_name=pdf_plan_name,
+            )
+            if reasons:
+                raise HTTPException(status_code=400, detail="Assembly stopped.\n" + "\n".join(reasons))
         dest = save_service.testing_folder_from_source(source_folder)
         path = save_service.save_package(doc, job_id, profile, dest_dir=dest)
         change_marks.save_marks(path, highlights)
