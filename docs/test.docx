@@ -1,0 +1,1053 @@
+MOA Val Package Assembly:
+1.	Pick up Plan from the MOA Val Assembly Log by entering your name so others know it is being worked.
+ 
+•	12/31/2021 MOA Plans located on this testing log assembly tab: MOA/Testing/2020 & 2021 Testing/2020 & 2021 MOA Testing Log.xlsx. 
+ 
+•	12/31/2022 MOA Plans located on this testing log assembly tab: MOA/Testing/2023 Testing/ “MOA 2023Testing Log.xlsx.”
+ 
+•	2022 MOA Off Calendar Plans located on this testing log assembly tab: MOA/Testing/2022 Testing/MOA 2022 Off Calendar Testing Log.xlsx.
+ 
+•	2023 MOA Off Calendar Plans located on this testing log assembly tab: MOA/Testing/2023 Testing/ “MOA 2023 Off Calendar Testing Log.xlsx.”
+ 
+ 
+2.	Go to the Plan’s Testing folder for the PYE being worked and find the “Valuation Package” folder and make sure all files in this folder are pdf, if any are not, then convert them to pdf or push back to the Tester and have them do it, so we reduce risk of Adobe crashing during the file combine process. (These should have been done already by the testing specialist)
+ 
+•	The MOA Plan Folders are located at OmniBPO>(K:)/Mutual of America Folder/Plan Number
+ 
+ 
+3.	Open Adobe and choose the “Tools” tab in upper left corner and then the “Combine Files” option
+   
+4.	Then hit the “Add Files” button to bring up the folder options:
+ 
+ 
+ 
+5.	Go to the Plan’s Testing folder for the PYE being worked and find the “Valuation Package” folder and select all pdf files in that folder and hit “open”
+ 
+6.	Using the Adobe Combine Tools, move the files in the correct order they need to be in and remove any files or pages not needed.
+ 
+a.	The ordering of Reports/Misc. should be as follows:
+ 
+1.	Cover Letter (Date on letter head should be single digit, i.e. 1 not 01)
+2.	Test Summary
+3.	Compensation Limit Failure Summary (for SHMa), if applicable
+4.	Combined Testing Report, if applicable
+5.	Action Required Page
+6.	Failed Test Notice/Letter/Excess Summary, if applicable
+7.	Variance Report(s), if applicable
+8.	Year End Recap: Important Information
+9.	Compliance and Administrative Reports: Overview and Descriptions
+10.	Contribution Analysis
+11.	HCE/Key (403b Plans should only indicate HCE)
+12.	Future HCE
+13.	ADP/ACP Tests, if only ADP Test should only indicate ADP Test, if only ACP Test should only indicate ACP Test.
+Order below for ADP/ACP test pages if applicable
+•	Summary Page (NOTE: some Plans may not have this page, this is ok, do not request)
+•	ADP/ACP Test Detail
+•	ADP/ACP Excluded
+•	ADP/ACP Corrections Page
+14.	402(g) Test
+15.	410(b) Test
+•	Detail report
+•	Excludable report
+•	Includable report
+•	Summary report
+16.	401(a)(4) Test, if applicable
+17.	Average Benefit Percentage Test, if applicable (if component Plan may have more individual test which go in this order)
+•	Average Benefit Percentage Test
+•	401a1 Comp Test
+•	Gateway Test, if applicable (may be part of the ABPT, if so leave with it)
+•	Overall Comp test
+•	Rate Group Comp Test
+•	Sum Comp Test
+18.	BRF Test (Benefits, Rights and Features test)
+19.	414(s) Test, if applicable
+20.	415 Limit Test
+21.	Top Heavy
+22.	Census
+NOTE: MOA Plans will NOT have Statement Of Contribution Report but may have a Variance Report.
+ 
+7.	Once files are in the proper order and unnecessary pages eliminated Click the Combine button in the upper right corner.
+ 
+8.	If needed you can move individual pages around in the file after combining them using the thumbnail icon, located on the left of the Adobe screen.
+ 
+9.	Save file as a PDF in OmniBPO/(K:)>Mutual of America>Plan number>Testing>YYYYTesting Folder as ######_2021-Valuation.pdf (###### = Plan Number)
+ 
+a.	Final Valuation Package should be saved based on beginning of Plan year.
+                                                              i.      i.e. 01/01/2017-12/31/2017 = YYYY = 2017
+                                                            ii.      i.e. 02/01/2017-01/31/2018 = YYYY = 2017
+                                                          iii.      i.e. 10/01/2017-09/30/2018 = YYYY = 2017
+ 
+ 
+MOA 401(k) Editing/Review of Valuation Package:
+NOTE: make sure “Mutual of America” is the ONLY entity mentioned in a MOA Valuation Package.
+ 
+A.	COVER PAGE:
+a.	Make sure you are working a MOA Plan. The upper right of the Cover Letter should show this Company stamp:
+ 
+ 
+b.	Verify the Company Name, Company Address, Plan Name, and Plan Year End is pulling correctly for the Plan and PYE you are assembling.
+ 
+ 
+B.   ACTION REQUIRED:
+1. Leave the below paragragh if testing fails and returns are required (does not apply to ADP/ACP test or if failure does not cause a return) otherwise remove.
+NOTE: do not include if 402g failure not processed by 4/15 deadline and this is noted on the 402(g) test
+ 
+•	Make sure the wording looks like this:
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+2.  Leave the below paragraph if ADP/ACP Test failed using PRIOR method and Returns are required, otherwise remove.
+- NOTE: if ADP Test is fixed using Reclassification or Shifting Methods, this paragraph is not needed, since returns would not be applicable
+ 
+ 
+ 
+3.  Leave the below paragraph if ADP/ACP Test failed using CURRENT method and Returns are required, otherwise remove. (The difference between Current/ Prior failure wording is Current wording has the additional QNEC sentence in it,)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4. Leave the paragraph below if ADP/ACP Test fails using CURRENT method and being corrected after 12 months of the plan year end, otherwise remove.
+ 
+5. Leave the paragraph below if ADP/ACP Test fails using PRIOR method and being corrected after 12 months of the plan year end, otherwise remove.
+ 
+ 
+ 
+ 
+ 
+NOTE: MOA Plans will not use Escalation wording.        
+ 5. If Valuation Package has Variance Report or the Comment section of the Val Assembly Template states the below paragraph is needed, you will keep the following paragraph on the Annual Valuation Report/Action Required.
+ 
+ 6. Look at the Test Summary: If the Plan has a Top Heavy percent of 60% or over then you will need to keep this section, otherwise remove.
+ 
+ 
+7.   If none of the Immediate Action Items listed above apply then only show the green line item below on the Annual Valuation Report/Action Required page.
+ 
+ 
+ 
+ 
+NOTE: for the Compensation Limit Failure Summary there will be no special wording on the Action Required page on these.
+ 
+
+
+C.)    ADP/ACP Failure Notice
+1. If the Plan fails ADP/ACP testing using the CURRENT method ONLY and returns are required, then you  will include the following ADP/ACP Failure notice:
+ 
+•	You will need to input the QNEC amounts on this CURRENT testing failure notice which will be found on the correction page of the ADP/ACP test.
+ 
+“ADP/ACP test is $X,XXX,XXX.XX” = the total of both ADP QNEC and the ACP QNEC found on the correction page  (e.g. $142.540.41 + 42,814.34 = $185,354.75)
+“ADP QNEC is” = ADP QNEC found on the correction page. (e.g., $142.541.41)
+“ACP QNEC is” = ACP QNEC found on the correction page. (e.g., $42,814.34)
+(This screen shot shows when both ADP and ACP Test fail) 
+If only the ADP or ACP Test fails, then the correction page will look like this, so you will need to pay attention to what you are reading.
+ 
+ 
+NOTE: If the ADP/ACP Test is not showing an ADP QNEC or ACP QNEC total then you will remove from the Failure notice on the one not represented on the ADP/ACP Correction Test Page.
+ 
+NOTE: If the ADP/ACP Test using PRIOR method fails with returns we do NOT include this Failure notice in the Val Package.
+2. If ADP/ACP Test fails using CURRENT method and is being corrected after 12 months of the plan year end, then you will include the following ADP/ACP Failure notice:
+ 
+•	You will need to input the QNEC amounts & Refund amounts on this After 12 months testing failure notice which will be found on the correction page of the ADP/ACP test.
+ 
+“ADP/ACP test is $X,XXX,XXX.XX” = the total of both ADP QNEC and the ACP QNEC found on the correction page. (e.g. $142.540.41 + 42,814.34 = $185,354.75)
+“ADP QNEC is” = ADP QNEC found on the correction page. (e.g., $142.541.41)
+“ACP QNEC is” = ACP QNEC found on the correction page. (e.g., $42,814.34)
+(This screen shot shows when both ADP and ACP Test fail) 
+If only the ADP or ACP Test fails, then the correction page will look like this, so you will need to pay attention to what you are reading.
+ 
+“Deferral Contribution of $” total Deferral Refund amount. (e.g., 17,571.0) 
+ 
+ 
+“Match Contribution of $” total Match refund amount. (e.g.,116.60)  
+ 
+ 
+ 
+3. If ADP/ACP Test fails using PRIOR method and is being corrected after 12 months of the plan year end, then you will include the following ADP/ACP Failure notice:
+ 
+•	You will need to input the Refund amounts on this After 12 months testing failure notice which will be found on the correction page of the ADP/ACP test.
+“Deferral Contribution of $” total Deferral Refund amount. (e.g., 17,571.0) 
+ 
+“Match Contribution of $” total Match refund amount. (e.g.,116.60)
+ 
+D.) Annual Additions (IRC 415) Test Failure Information
+ - Remove if Plan did not fail 415 (no 415 returns)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+E. Sample Letter for ADP/ACP
+- Remove if Plan did not have ADP/ACP
+- Remove if Plan did not Fail or Failed and did not have returns required.
+ 
+F. Sample Letter for failed 402(g)
+- Remove if Plan did not have returns for 402(g)
+ 
+NOTE, if 402g not processed prior to 4/15 deadline and this is noted on 402g report do not include the sample letter.
+ 
+G. Sample Letter for failed 415 annual additions
+- Remove if Plan did not fail 415 (no 415 returns)
+ 
+H.  Excess Summary Report
+- Normally you will only see an excess summary report for failures that are not ADP/ACP related, unless the ADP/ACP Failure is for a partially vested participant.
+ 
+I. Year End Recap: “Important Information” Page:
+ 
+•	Follow the notes on the below example on what bullet point to use and remove from the Important information page:
+ 
+ 
+ 
+1.	Reading the ADP/ACP Test for PRIOR Testing bullet changes:
+ 
+•	Determine which paragraph is applicable base on testing method type, no HCE or if Plan is SH. (If needed open the docinfo.xls file in the Plan’s Testing folder to determine)
+ 
+•	 You can determine ADP/ACP Testing method by looking at the ADP/ACP test itself on the ADP/ACP Test Results page of the Valuation Package and look for the following wording to let you know if it is “Prior Testing” and if no wording then it is “Current Testing”
+ 
+•	To calculate the Actual Deferral Percentage for the HCE’s on a “Prior Test”, look for the NHCE % on the ADP/ACP test.
+ 
+ 
+…………….and use the below table to determine what the HCE% will be.
+
+If the Actual Deferral Percentage for the NHCE group is:	Then the Maximum Actual Deferral percentage for the HCE group is:
+0.00-1.99%   (x2)	0.02-3.98%
+                                   2%   (+2)	4%
+                                   3%   (+2)	                                      5%
+                                   4%   (+2)	                                      6%
+                                   5%   (+2)	                                      7%
+                                   6%   (+2)	                                      8%
+                                   7%   (+2)	                                      9%
+                                   8%   (x1.25)	                                    10%
+                                   9%   (x1.25)	                                    11.25%
+                                 10%   (x1.25)	                                    12.5%
+                                 11%   (x1.25)	                                    13.75%
+                                 12%   (x1.25)	                                    15%
+ 
+ 
+N. Compliance and Administrative Reports
+a.	Include in all reports.
+
+
+ 
+ 
+ 
+O.  Bookmarks:
+ 
+•	Once Valuation Package is assembled you will need create bookmarks for each section:
+ 
+•	On left side of screen click on “bookmark” icon and delete all current bookmarks, start on first page of Val Package and begin to create your bookmarks with the following titles:
+ 
+1.	Cover Letter
+2.	Test Summary
+3.	Contribution Analysis
+4.	HCE/Key (if 401k Plan)
+5.	HCE (if 403b Plan)
+6.	Future HCE
+7.	ADP/ACP Tests (if 401k Plan)
+8.	ADP Test (if 401k with ADP Only)
+9.	ACP Test (if 403b Plan)
+10.	402(g) Test
+**Please note, 402(g) Test for Off Calendar Plans, the Plan Year Dates will use Calendar Year Beginning Date, the dates will not match the Plan Year End Date. (i.e., Off Calendar PYE 06/30/2025, 402(g) Report will have these dates 01/01/2024-12/31/2024).
+11.	410(b) Test
+12.	401(a)(4) Test
+13.	Average Benefit Percentage Test
+14.	Benefits, Rights and Features Test
+15.	414(s) Test
+16.	415 Limit Test
+17.	Top Heavy
+18.	Census
+ 
+P.  Assembly Done.
+ 
+•	Email the Tester who requested the Valuation Package assembly to notify them the Valuation Package has been assembled and is ready for review.
+•	The subject line of the email MUST start with “MOA” then “Plan Number”, then “Plan Name” then “PYE”
+•	Update the Val Assembly Log with the date sent to Tester and time to assemble.
+
+
+MOA 401K Valuation Package Assemble Explanation
+
+A.	COVER PAGE: 
+ 	Make sure you are working on a MOA Plan. The upper right of the Cover Letter should show this Company stamp:
+ 
+
+ 	Verify the Company Name, Company Address, Plan Name, and Plan Year End is pulling correctly for the Plan and PYE you are assembling. 
+ 	We need to check whether the date of valuation file is showing today’s date or not, if not need to edit with current date.
+
+
+
+
+
+ 
+ 	Tester has been updated the results and required %, while doing assemble need to check all results are correct as per test Reports.
+
+416 Top Heavy Determination 
+
+Test:     00.00% to Key Employees
+Plan is/is not Top Heavy
+
+ 	Make sure TH % = the actual TH Test %
+ 	If TH% is 0%, it should be show as 0.00%
+ 	Make sure check plan is Top Heavy or not (If more than 60%, result should be Plan is Top Heavy & If less than or equals to 60% then Plan is not Top Heavy)
+
+410(b) Coverage Test
+
+Standard:       Pass/Fail Ratio percent 100% - This % denote the result of PS & SHNE contributions
+
+401(k):              Pass/Fail Ratio percent 100% - This % denote the result of SD (Deferrals & Roth) 
+
+401(m):             Pass/Fail Ratio percent 100% - This % denote the result of Match & SH match contributions.
+
+ 	If have contributions other than SD/Roth, 410b Test results should be mentioned on the Testing Summary of Results
+
+ 	If 410B fails, Testing done with ABPT test. Then Tester had included the wording like below snip
+ 
+
+Benefits Right and Features Test
+Test:    Pass/Fail - This result denotes of BRF test result.
+
+ 	Note – we are only adding BRF test result in Result summary, do not include any report regarding BRF test (Result summary only enough)
+
+401(a)(4) Test
+
+Test:    Pass/Fail - This result denotes of 401(a) test result.
+
+414(s)Test
+
+Test:    Pass/Fail - This result denotes of 414(s) test result.
+
+
+
+402(g) Deferral Limits
+
+Test:    Pass/Fail - Tester edited the result as per 402g report.
+
+
+415(c) Annual Additions
+
+Test:    Pass/Fail – Tester edited the result as per the 415 report.
+
+
+Average Deferral Percentage (ADP)
+
+Test:    Pass/Fail – Tester edited the result as per ADP/ACP test result.
+
+Average Contribution Percentage (ACP)
+
+Test:    Pass/Fail – Tester edited the result as per ADP/ACP test result
+
+
+
+***See Next Page for Action Required Items 
+
+
+
+
+
+
+
+
+
+Annual Valuation Report
+
+If any Testing has been failed the below Action required wordings are required
+
+
+1. We will be using the below wordings if both 402g and 415 fails.
+ 	We can find the result of 402g and 415 in Result Summary page, if any of one is mentioned as fail, we need to use the below wordings.
+
+ 	NOTE: do not include if 402g failure is not processed by 4/15 deadline and this is noted on the 402(g) test or result summary page.
+ 
+
+2.	Below paragraphs required, if ADPACP testing fails and returns are required (does not apply if failure does not cause a return) otherwise remove
+
+ 	a. We can find the type of testing in the Valuation package log if in the log it has been mentioned PRIOR YEAR and if ADP/ACP fails Leave the below wordings.
+
+ 
+
+ 
+
+ 	b. We can find the type of testing in the Valuation package log if in the log it has been mentioned CURRENT YEAR and if ADP/ACP fails Leave the below wordings.
+ 
+ 
+
+
+ 	c. Leave the below wordings if ADPACP fails AFTER 12 MONTHS where testing method is PRIOR YEAR
+
+
+ 
+
+ 	d. Leave the below wordings if ADP/ACP fails AFTER 12 MONTHS where testing method is CURRENT YEAR.
+
+ 
+
+3.	Leave the below wordings if any true up or annual allocation is done. 
+ 
+ 	In val pkg log tester will mention include contributions wordings. Then we need to include this, or even in val pkg folder If we saw any variance sheet client copy, we need to keep these wordings.
+ 
+
+
+4.	Leave the below wordings if a Top-heavy test result is more than 60% (see either in top heavy test report or in result summary page)
+ 
+
+5.	If none of the Immediate Action Items listed above apply, then only show the green line item below on the Annual Valuation Report/Action Required page.
+ 
+***See Next Page for Failure excess Notice
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+Excess return Notice for ADP/ACP, 415 or 402g Failures
+
+ 	Cross verifies the plan number, Plan year and Plan name
+
+ 	A. Leave the below wordings if ADP/ACP fails After 12 months by using current year testing method. Here we need to edit the value by adding both and update in first QNEC of both ADPACP and followed by next.
+ 
+
+
+ 	B. Leave the below wordings if ADP/ACP fails after 12 months by using prior year testing method.
+
+ 
+
+
+***See Next Page for How to find QNEC amount from ADPACP test and how to edit
+
+
+
+
+
+
+ 	C. Leave the below wordings if ADP/ACP fails before 12 months by using current year testing method. Here we need to edit the value by adding both and update in first QNEC of both ADPACP and followed by next.
+
+
+
+
+ 	You will need to input the QNEC amounts on this CURRENT testing failure notice which will be found on the correction page of the ADP/ACP test.
+
+
+ 	ADP/ACP test is $X,XXX,XXX.XX” = the total of both ADP QNEC and the ACP QNEC found on the correction page  (e.g. $142.540.41 + 42,814.34 = $185,354.75)
+ 	“ADP QNEC is” = ADP QNEC found on the correction page. (e.g., $142.541.41)
+ 	“ACP QNEC is” = ACP QNEC found on the correction page. (e.g., $42,814.34)
+(This screen shot shows when both ADP and ACP Test fail)
+
+
+ 	If only the ADP or ACP Test fails, then the correction page will look like this, so you will need to pay attention to what you are reading. 
+
+
+
+ 	D. Return notice is not required for ADPACP failing in before 12 months by using Prior year method
+
+
+
+
+
+***See Next Page for some sample letter draft
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Annual Additions (IRC 415) Test Failure Information
+
+ 	Annual Additions (IRC 415) Test Failure Information - Remove if Plan did not fail 415 (no 415 returns)
+ 
+
+
+
+
+
+ 
+
+ 	Sample Letter for ADP/ACP Failure
+
+- Remove if Plan did not have ADP/ACP
+- Remove if Plan did not Fail or Failed and did not have returns required.
+ 
+
+
+
+
+
+ 	Sample Letter for failed 402(g)
+
+- Remove if Plan did not have returns for 402(g)
+
+ 	NOTE, if 402g not processed prior to 4/15 deadline and this is noted on 402g report do not include the sample letter. 
+ 
+
+
+
+ 	Sample Letter for failed 415 annual additions
+
+- Remove if Plan did not fail 415 (no 415 returns)
+ 
+
+
+
+
+
+
+ 	If Plan has Employer Contribution True-up – Need to include Client variance report here.
+
+1.	Client copy of Variance, if applicable
+a.	Make sure names in alphabetical order & not cut off
+b.	Recheck plan name, plan number and plan year end are correct
+c.	Make sure SSN should not be there
+d.	Consistent font size
+e.	Zeroes formatted as 0.00 
+Note – Bookmarks not applicable for client variance pdf.
+
+
+***See Next Page for Year End Recap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+YEAR END RECAP
+“Important Information” Page: - Follow the notes on the below example on what bullet point to use and remove from the important information page: 
+***See here for How to calculate and put NHCE% for Prior year testing method (for bullet point 2 from above snip)
+
+1.	Reading the ADP/ACP Test for PRIOR Testing bullet changes:
+
+2.	Determine which paragraph is applicable based on testing method type, no HCE or if Plan is SH. (If needed open the docinfo.xls file in the Plan’s Testing folder to determine) 
+
+3.	You can determine ADP/ACP Testing method by looking at the ADP/ACP test itself on the ADP/ACP Test Results page of the Valuation Package and look for the following wording to let you know if it is “Prior Testing” and if no wording then it is “Current Testing”
+
+4.	To calculate the Actual Deferral Percentage for the HCE’s on a “Prior Test”, look for the NHCE % on the ADP/ACP test.
+
+…………….and use the below table to determine what the HCE% will be.
+
+If the Actual Deferral Percentage for the NHCE group is:	Then the Maximum Actual Deferral percentage for the HCE group is:
+0.00-1.99%   (x2)	0.02-3.98%
+                                   2%   (+2)	4%
+                                   3%   (+2)	                                      5%
+                                   4%   (+2)	                                      6%
+                                   5%   (+2)	                                      7%
+                                   6%   (+2)	                                      8%
+                                   7%   (+2)	                                      9%
+                                   8%   (x1.25)	                                    10%
+                                   9%   (x1.25)	                                    11.25%
+                                 10%   (x1.25)	                                    12.5%
+                                 11%   (x1.25)	                                    13.75%
+                                 12%   (x1.25)	                                    15%
+
+***See Next Page for Admin Reports and Bookmarks
+ 
+
+ 	Must be Include 3 pages in all the reports. 
+
+
+ 	Bookmarks: 
+
+-	Once Valuation Package is assembled you will need create bookmarks for each section:
+
+-	On left side of screen click on “bookmark” icon and delete all current bookmarks, start on first page of Val Package and begin to create your bookmarks with the following titles: 
+
+1.	Cover Letter 
+2.	Test Summary
+3.	Contribution Analysis
+4.	HCE/Key (if 401k Plan)
+5.	HCE (if 403b Plan)
+6.	Future HCE
+7.	ADP/ACP Tests (if 401k Plan) - Make sure in correct order:  Summary / Detail / Corrections
+8.	ADP Test (if 401k with ADP Only)
+9.	ACP Test (if 403b Plan)
+10.	402(g) Test
+**Please note, 402(g) Test for Off Calendar Plans, the Plan Year Dates will use Calendar Year Beginning Date, the dates will not match the Plan Year End Date. (i.e., Off Calendar PYE 06/30/2026, 402(g) Report will have these dates 01/01/2025-12/31/2025).
+11.	410(b) Test
+12.	401(a)(4) Test, if applicable
+13.	Average Benefit Percentage Test, if applicable
+14.	414(s) Test, if applicable
+15.	415 Limit Test
+16.	Top Heavy
+17.	Census
+
+
+
+MOA Valuation Package Assembly Additional Info: 
+
+1.   MOA Plans DO NOT have the following items in the Val Package:
+a.	Audited wording
+b.	SOC
+c.	5500 wording
+a.) Also
+-   Support does not sweep MOA Plans nor do we create any Workflow Tasks for these Plans. 
+
+2.  For Plans that have Locations 
+ 	When assembling these put each test with all locations. Contribution Analysis Loc 1, Contribution Analysis Loc 2, etc.
+ 	For Control Groups – The Tester Specialist should have already combined and put the appropriate Plan Names on the Tests.  
+3. Deadlines for failed testing returns
+ 	MOA Plans will NOT use escalation wording for failed tests.
+4. Please cross-check the following points while assembling the package:
+ 	Ensure all test reports are included and do not contain any SSNs.
+ 	Ensure all reports are arranged in the correct order as noted above
+ 	Verify that all reports display the correct plan name and plan number.
+ 	Confirm that the bookmarks are accurate for each section (except the Variance Report).
+5.	Assembly Done.
+
+ 	Email the person who signed up the Val assembly to notify them the Val has been assembled and is ready for review. 
+ 	The subject line of the email MUST start with “MOA” then “Plan Number”, then “Plan Name” then “PYE”
+ 	Update the Val Assembly log with the date sent back to tester and time took to build.
+
+Be sure this is fully completed & saved as ******_2025-Valuation in plan Testing folder. (****** is plan number)
+
+--------------------------------------------------------------------------------------------------------
+
+403(b) Editing/Review of Valuation Package:
+NOTE: make sure “Mutual of America” is the ONLY entity mentioned in a MOA Valuation Package.
+ 
+A.) COVER PAGE:
+ 
+1.)  Make sure you are working a MOA Plan. The upper right of the Cover Letter should show this company stamp:
+ 
+ 
+ 
+2.)  Verify the Plan Name, Company Name and Plan Year End is pulling correctly for the plan and PYE you are working.
+ 
+
+
+ 
+B.)   ACTION REQUIRED:
+1.) Leave the below paragragh if testing fails and returns are required (does not apply to ADP/ACP test or if failure does not cause a return) otherwise remove.
+NOTE: do not include if 402g failure not processed by 4/15 deadline and this is noted on the 402(g) test
+ 
+•	Make sure the wording looks like this:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2.).  Leave the below paragraph if the ACP Test failed using PRIOR method and Returns are required, otherwise remove.
+- NOTE: if ACP test is fixed thru Reclassification or Shifting Methods, this paragraph is not needed, since returns would not be applicable
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.)  Leave the below paragraph if ACP Test failed using CURRENT method and Returns are required, otherwise remove. (The difference between Current/ Prior failure wording is Current wording has the additional QNEC sentence in it,)
+ 
+ 
+ 
+NOTE: MOA Plans will not use Escalation wording.    
+ 
+ 
+NOTE: 403(b) plans should NEVER mention ADP testing.    
+ 
+NOTE: 403b plans will show a 410b test on the Test Summary but may not have the 410b report itself in the val. This is Ok.
+ 
+ 
+ 
+4).   If none of the immediate action items above apply then only show the green line item below on this page.
+ 
+ 
+ 
+ 
+NOTE: for the Compensation Limit Failure Summary there will be no special wording on the Action Required page on these.
+
+
+C.)    ACP Failure Notice
+1. If the plan fails ACP testing using the CURRENT method ONLY and returns are required, then you will include the following ACP Failure notice:
+ 
+•	You will need to input the QNEC amount on this CURRENT testing failure notice which will be found on the correction page of the ACP test.
+ 
+ 
+                          
+  
+(e.g., “ACP test is $X,XXX,XXX.XX” = $818.86)
+ 
+NOTE: If the ACP test is not showing an ACP QNEC total then you will remove from the Failure notice since an ACP QNEC is not represented on the ACP Correction Test Page.
+ 
+NOTE: If the ACP test using PRIOR method fails, with returns we do NOT include this Failure notice in the Val Package.
+ 
+ 
+D.) Annual Additions (IRC 415) Test Failure Information
+- Remove if plan did not fail 415 (no 415 returns)
+ 
+ 
+ 
+ 
+ 
+E.) Sample Letter for ACP
+- Remove if plan did not have ACP
+- Remove if plan did not Fail or Failed and did not have returns required.
+ 
+F.) Sample Letter for failed 402(g)
+- Remove if plan did not have returns for 402(g)
+ 
+NOTE, if 402g not processed prior to 4/15 deadline and this is noted on 402g report do not include the sample letter.
+ 
+G.) Sample Letter for failed 415 annual additions
+- Remove if plan did not fail 415 (no 415 returns)
+ 
+H.)  Excess Summary Report
+- Normally you will only see an excess summary report for failures that are not ACP related, unless the ACP Failure is for a partially vested participant.
+ 
+I.) Year End Recap: “Important Information” Page:
+ 
+•	Follow the notes on the below example on what bullet point to use and remove from the Important information page:
+ 
+ 
+J.) Compliance and Administrative Reports
+a. Include in all reports.
+ 
+ 
+K.)  Bookmarks:
+ 
+•	Once Val pkg is assembled you will need create bookmarks for each section:
+ 
+•	On left side of screen click on “bookmark” icon and delete all current bookmarks there, start on first page of Val Package and begin to create your bookmarks with the following titles:
+ 
+1.  Cover Letter
+2.  Test Summary
+3.  Contribution Analysis
+4.  HCE
+5.  Future HCE
+6.  ACP Test
+7.  402(g) Test
+8.  410(b) Test
+9.  401(a)(4) Test
+10.  Average Benefit Percentage Test
+11.  Benefits, Rights and Features test
+12.  414(s) Test
+13.  415 Limit Test
+14.  Top Heavy
+15.  Census
+ 
+ 
+L.).  Assembly Done.
+ 
+•	Email the person who signed up the Val assembly to notify them the Val has been assembled and is ready for review.
+ 
+•	The subject line of the email MUST start with “MOA” then “Plan Number”, then “Plan Name” then “PYE”
+ 
+•	Update the Val Assembly log with the date sent back to tester and time took to build.
+ 
+401(k) ADP/ACP ONLY Testing Plans-Edits
+These are the only pages applicable for this type of Plan. There will be no Allocation/Variance Reports, and no other Tests included. If there are other reports, then full Testing Package will be needed.
+•	On left side of screen click on “bookmark” icon and delete all current bookmarks there, start on first page of Val Package (Cover Letter) and begin to create your bookmarks with the following titles:
+•	Cover Letter
+•	Test Summary
+•	Action Required Page (no bookmark needed)
+***See Pg 4 above for how to edit the Action Required Page if the ADP/ACP Test Fails: 401(k) Editing/Review of Valuation Package
+•	Failure Pages (if applicable) (no bookmark needed) (See screenshots below)
+•	HCE/Key
+•	Future HCE
+•	ADP/ACP Tests
+Cover Letter 401(k) ADP/ACP
+ 
+ 
+***See Next Page for Failure Information
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ADP/ACP Failure Notice
+1.	
+2.	
+	 
+3.	
+If the plan fails ADP/ACP testing using the CURRENT method ONLY and returns are required, then you will include the following ADP/ACP Failure notice:
+ 
+•	You will need to input the QNEC amounts on this CURRENT testing failure notice which will be found on the correction page of the ADP/ACP test.
+“ADP/ACP test is $X,XXX,XXX.XX” = the total of both ADP QNEC and the ACP QNEC found on the correction page  (e.g. $142.540.41 + 42,814.34 = $185,354.75)
+“ADP QNEC is” = ADP QNEC found on the correction page. (e.g., $142.541.41)
+“ACP QNEC is” = ACP QNEC found on the correction page. (e.g., $42,814.34)
+(This screen shot shows when both ADP and ACP Test fail)
+ 
+ If only the ADP or ACP Test fails, then the correction page will look like the below screenshot, so you will need to pay attention to what you are reading.
+ 
+ 
+NOTE: If the ADP/ACP Test is not showing an ADP QNEC or ACP QNEC total then you will remove from the Failure Notice on the one not represented on the ADP/ACP Correction Test Page.
+ 
+NOTE: If the ADP/ACP Test using PRIOR method fails with returns we do NOT include this Failure notice in the Val package.
+ 
+403(b) ACP ONLY Testing Plans-Edits
+These are the only pages applicable for this type of Plan. There will be no Allocation/Variance Reports, and no other Tests included. If there are other reports, then full Testing Package will be needed.
+•	 
+•	On left side of screen click on “bookmark” icon and delete all current bookmarks there, start on first page of Val Package (Cover Letter) and begin to create your bookmarks with the following titles:
+•	Cover Letter
+•	Test Summary
+•	Action Required Page (no bookmark needed)
+See Pg 4 above for how to edit the Action Required Page if the ACP Test Fails: 401(k) Editing/Review of Valuation Package
+•	Failure Pages (if applicable) (no bookmark needed) (See screenshots below)
+•	HCE
+•	Future HCE
+•	ACP Test
+ 
+Cover Letter 401(k) ADP/ACP
+ 
+ 
+ACP Failure Notice
+1. If the plan fails ACP testing using the CURRENT method ONLY and returns are required, then you will include the following ACP Failure notice:
+ 
+You will need to input the QNEC amount on this CURRENT testing failure notice which will be found on the correction page of the ACP test. (I.e. “ACP Test is $X,XXX,XXX.XX” = $818.86)
+ 
+ 
+                          
+  
+ 
+NOTE: If the ACP Test is not showing an ACP QNEC total then you will remove from the Failure notice since an ACP QNEC is not represented on the ACP Correction Test Page.
+ 
+NOTE: If the ACP Test using PRIOR method fails, with returns we do NOT include this Failure notice in the Val Package.
+ 
+ 
+MOA Valuation Package Assembly Additional Info:
+ 
+1.   MOA Plans DO NOT have the following items in the Val Package:
+-   Audited wording
+-   SOC
+-   5500 wording
+ 
+a.) Also
+-   Support does not sweep MOA Plans nor do we create any Workflow Tasks for these Plans.
+ 
+2.  For Plans that have Locations
+ 
+-     When assembling these put each test with all locations. Contribution Analysis Loc 1, Contribution Analysis Loc 2, etc.
+•	For Control Groups – The Tester Specialist should have already combined and put the appropriate Plan Names on the Tests. 
+ 
+3. Deadlines for failed testing returns
+ 
+-      MOA Plans will NOT use escalation wording for failed tests.
+ 
+ 
+
+
+ 
+ 
+ 
+Information below this page is not to be used at this time.  We are unsure if this info applies to MOA plans for the moment, but we are keeping info until this is determined. 
+
+
+4. Church Plans
+ 
+This is the UA section needing to be removed from a Church Plan Val Package. 
+·UNIVERSAL AVAILABILITY RULE
+The “universal availability” generally requires everyone must be able to defer. There is no age or service requirement permitted.  To satisfy universal availability, all employees must have “effective opportunity” to make this deferral election annually At least once during a plan year the plan must provide an employee (whether part-time or full-time) with an effective opportunity to make or change an elective deferral election, up to the dollar limit in effect, including any catch-up deferrals permitted under the plan, as well as Roth contributions if the plan permits. Certain employees may be excluded, including:
+·             Employees who normally work less than 20 hours per week*
+·             Students performing services at a school, college or university*
+·             Non-resident aliens with no U.S. source income
+·             Employees who are eligible to make elective deferrals under another 401(k), 403(b) or 457(b) plan sponsored by the same employer
+·             Employees not able to defer $200 during the plan year
+*For the less than 20 hours per week exclusion and for the student exclusion, if any employee who falls under one of these exclusions has the right to make elective deferrals, then no employee who falls under such exclusions may be prevented from making elective deferrals.
+ 
+This is not part of the UA section.
+·If you sponsor a qualified retirement plan not administered by CUNA Mutual Retirement Solutions, please provide your service provider with a copy of this Valuation Report to complete the combined plan testing. Upon request, we can perform the combined plan testing. Please contact your Plan Services Consultant to discuss.
+ 
+457 Assemblies
+ 
+457 Valuation Packages will follow the same general building guidelines as a 401(k) in every aspect. The main difference is that 457 generally only have a 457 Limit Test and a Contribution Analysis and maybe a SOC and/or Failed Excess Returns report. 457 Val Packages are much smaller than other Val Packages.
+Manual changes on 457 for “Important Information page:
+1.) When a 457 is signed up for Assembly and the tester lets us know that the plan is a 457 Non Governmental, then we need to remove the following paragraphs:
+ 
+ 
+•	457 Non Governmental Plans do not allow age 50 Catch up contributions.
+ 
+2.) If indicated on the Assembly log, by the tester, that Forfeitures are Reallocated we will keep the following paragraph in the Val, otherwise remove it.
+ 
+ 
+3.) If indicated on the Assembly Log, by the Tester, that there are no Forfeitures to Reallocate we will keep the following paragraph in the Val, otherwise remove it.
+ 
+4.) If there is no Contribution Analysis report in the Val Package, then we need to remove the following Section from the Val Package:
+ 
+ 
+Mid-Yr Val Assembly
+ 
+Assemble / Mid-Year Results
+1.	Assemble in order
+a.	Mid-year letter
+b.	ADP Summary
+c.	ADP Detail
+2.	Save as ######_MidYearTesting_2_YYYY_yyyy-Mid-Year-ADP-Test.PDF (YYYY based on beginning of plan year for this file)
+3.	Edit Midyear Letter
+ 
+Mid-Year Letter Editing
+<Date>
+ 
+For Plan:          <Plan Name>
+ 
+We have completed a mid-year ADP/ACP test for the plan year ending <MM/DD/YYYY>. The information contained in this test is based on the information we currently have on file. Include in all Mid-year letters
+ 
+>The result of this mid-year analysis is attached. It indicates that the maximum actual deferral percentage for all Highly Compensated Employees (HCEs), when averaged together, is within the range allowed. Use this Paragraph when Mid-year is passing
+ 
+>The result of this mid-year analysis is attached. It indicates that the maximum actual deferral percentage for all Highly Compensated Employees (HCEs), when averaged together, exceeds the range allowed. The maximum deferral percentage for the HCEs is <xx.xx%>. Use this paragraph when Mid-year testing is failing.  The HCE Maximum deferral percentage will need to be manually updated from the mid-year test. 
+ 
+>As an alternative to reducing the HCEs deferrals, the employer may contribute enough money to the Non-Highly Compensated Employees by the end of the plan year to satisfy the discrimination test. Use this paragraph, in conjunction with the above failed mid-year paragraph, when Mid-year test is failing and Current method is used
+ 
+Please remember that this is merely a projection based on the current situation. There are many variables that may occur throughout the year that could change this projection. For example, variables could include (but are not limited to): eligible, non-deferring participants entering on the upcoming plan entry date; one or more Highly Compensated Employees terminating employment; and unfavorable market conditions leading to a drop in Non-Highly Compensated Employees participation level. Include in all Mid-year letters
+ 
+Thank you for allowing us to serve you. If you have any questions, please contact your consultant or call us at 844.999.2677. Include in all Mid-year letters
+ 
+CUNA Mutual Retirement Solutions Include in all Mid-year letters
+ 
+1.	Save changes using same saving convention is Step 2 above.
+“Match Contribution of $” total Match refund amount. (e.g.,116.60)  
+ 
+ 
+ 
+3. If ADP/ACP Test fails using PRIOR method and is being corrected after 12 months of the plan year end, then you will include the following ADP/ACP Failure notice:
+ 
+•	You will need to input the Refund amounts on this After 12 months testing failure notice which will be found on the correction page of the ADP/ACP test.
+“Deferral Contribution of $” total Deferral Refund amount. (e.g., 17,571.0) 
+ 
+“Match Contribution of $” total Match refund amount. (e.g.,116.60)
+ 
+D.) Annual Additions (IRC 415) Test Failure Information
+- Remove if Plan did not fail 415 (no 415 returns)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+E. Sample Letter for ADP/ACP
+- Remove if Plan did not have ADP/ACP
+- Remove if Plan did not Fail or Failed and did not have returns required.
+ 
+F. Sample Letter for failed 402(g)
+- Remove if Plan did not have returns for 402(g)
+ 
+NOTE, if 402g not processed prior to 4/15 deadline and this is noted on 402g report do not include the sample letter.
+ 
+G. Sample Letter for failed 415 annual additions
+- Remove if Plan did not fail 415 (no 415 returns)
+ 
+H.  Excess Summary Report
+- Normally you will only see an excess summary report for failures that are not ADP/ACP related, unless the ADP/ACP Failure is for a partially vested participant.
+ 
+I. Year End Recap: “Important Information” Page:
+ 
+•	Follow the notes on the below example on what bullet point to use and remove from the Important information page:
+ 
+ 
+1.	Reading the ADP/ACP Test for PRIOR Testing bullet changes:
+ 
+•	Determine which paragraph is applicable base on testing method type, no HCE or if Plan is SH. (If needed open the docinfo.xls file in the Plan’s Testing folder to determine)
+ 
+•	You can determine ADP/ACP Testing method by looking at the ADP/ACP test itself on the ADP/ACP Test Results page of the Valuation Package and look for the following wording to let you know if it is “Prior Testing” and if no wording then it is “Current Testing”
+ 
+•	To calculate the Actual Deferral Percentage for the HCE’s on a “Prior Test”, look for the NHCE % on the ADP/ACP test.
+ 
+…………….and use the below table to determine what the HCE% will be.
+
+If the Actual Deferral Percentage for the NHCE group is:	Then the Maximum Actual Deferral percentage for the HCE group is:
+0.00-1.99%   (x2)	0.02-3.98%
+                                   2%   (+2)	4%
+                                   3%   (+2)	                                      5%
+                                   4%   (+2)	                                      6%
+                                   5%   (+2)	                                      7%
+                                   6%   (+2)	                                      8%
+                                   7%   (+2)	                                      9%
+                                   8%   (x1.25)	                                    10%
+                                   9%   (x1.25)	                                    11.25%
+                                 10%   (x1.25)	                                    12.5%
+                                 11%   (x1.25)	                                    13.75%
+                                 12%   (x1.25)	                                    15%
+ 
+ 
+N. Compliance and Administrative Reports
+a.	Include in all reports.
+
+
+ 
+ 
+ 
+O.  Bookmarks:
+ 
+•	Once Valuation Package is assembled you will need create bookmarks for each section:
+ 
+•	On left side of screen click on “bookmark” icon and delete all current bookmarks, start on first page of Val Package and begin to create your bookmarks with the following titles:
+ 
+1.	Cover Letter
+2.	Test Summary
+3.	Contribution Analysis
+4.	HCE/Key (if 401k Plan)
+5.	HCE (if 403b Plan)
+6.	Future HCE
+7.	ADP/ACP Tests (if 401k Plan)
+8.	ADP Test (if 401k with ADP Only)
+9.	ACP Test (if 403b Plan)
+10.	402(g) Test
+**Please note, 402(g) Test for Off Calendar Plans, the Plan Year Dates will use Calendar Year Beginning Date, the dates will not match the Plan Year End Date. (i.e., Off Calendar PYE 06/30/2025, 402(g) Report will have these dates 01/01/2024-12/31/2024).
+11.	410(b) Test
+12.	401(a)(4) Test
+13.	Average Benefit Percentage Test
+14.	Benefits, Rights and Features Test
+15.	414(s) Test
+16.	415 Limit Test
+17.	Top Heavy
+18.	Census
+ 
+P.  Assembly Done.
+ 
+•	Email the Tester who requested the Valuation Package assembly to notify them the Valuation Package has been assembled and is ready for review.
+•	The subject line of the email MUST start with “MOA” then “Plan Number”, then “Plan Name” then “PYE”
+•	Update the Val Assembly Log with the date sent to Tester and time to assemble.
+ 
+Be sure this is fully completed & saved as ******_2025-Valuation in plan Testing folder. (****** is plan number)
+
+
+
