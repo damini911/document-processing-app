@@ -10,6 +10,68 @@ from services.orchestrator import process_uploads
 FIXTURES = Path(__file__).resolve().parent / "fixtures"
 
 
+def test_auto_order_matches_the_report_list():
+    names = [
+        "Census Report.pdf",
+        "Top Heavy Test.pdf",
+        "415 Test.pdf",
+        "414(s) Test.pdf",
+        "BRF Test.pdf",
+        "Average Benefits Test.pdf",
+        "401(a)(4) Test.pdf",
+        "410(b) Test.pdf",
+        "402(g) Test.pdf",
+        "ADP ACP Test.pdf",
+        "Future HCE Report.pdf",
+        "HCE Key Report.pdf",
+        "Contribution Analysis.pdf",
+        "SHNE Variance Report.pdf",
+        "PS Variance Report.pdf",
+        "Variance Report.pdf",
+        "Excess Return Notice.pdf",
+        "Combined Compliance Testing Report.pdf",
+        "Compensation Limit Failure Summary.pdf",
+        "Summary of Compliance Test Results.pdf",
+        "Valuation Reports.pdf",
+        "Compliance Testing Reports.pdf",
+        "Important Information.pdf",
+        "415(c) Failure Information.pdf",
+        "Action Required.pdf",
+        "Result Summary.pdf",
+        "Cover Letter.pdf",
+    ]
+    ordered = [name for name, _ in order_uploads([(name, b"%PDF") for name in names])]
+    assert ordered == [
+        "Cover Letter.pdf",
+        "Result Summary.pdf",
+        "Action Required.pdf",
+        "415(c) Failure Information.pdf",
+        "Important Information.pdf",
+        "Compliance Testing Reports.pdf",
+        "Valuation Reports.pdf",
+        "Summary of Compliance Test Results.pdf",
+        "Compensation Limit Failure Summary.pdf",
+        "Combined Compliance Testing Report.pdf",
+        "Excess Return Notice.pdf",
+        "Variance Report.pdf",
+        "PS Variance Report.pdf",
+        "SHNE Variance Report.pdf",
+        "Contribution Analysis.pdf",
+        "HCE Key Report.pdf",
+        "Future HCE Report.pdf",
+        "ADP ACP Test.pdf",
+        "402(g) Test.pdf",
+        "410(b) Test.pdf",
+        "401(a)(4) Test.pdf",
+        "Average Benefits Test.pdf",
+        "BRF Test.pdf",
+        "414(s) Test.pdf",
+        "415 Test.pdf",
+        "Top Heavy Test.pdf",
+        "Census Report.pdf",
+    ]
+
+
 def test_sop_rank_cover_before_census():
     assert sop_rank("222222 2024 401k Valuation Pkg.pdf") < sop_rank("2024Census.pdf")
     assert sop_rank("2024ADP-ACP.pdf") < sop_rank("2024402G.pdf")
@@ -76,6 +138,12 @@ def test_auto_order_uses_folder_keywords():
     assert ordered[0] == "123456 2025 401k Valuation Pkg.pdf"
     assert ordered[1] == "2025ResultSumm.pdf"
     assert ordered[-1] == "2025Census.pdf"
+    assert sop_rank("2025ResultSumm.pdf") < sop_rank("Action Required.pdf")
+    from services.file_order import list_file_meta
+
+    packet = list_file_meta("222222 2024 401k Valuation Pkg.pdf", 10, 4)
+    assert packet["labels"][1] == "Action required page 1"
+    assert packet["ranks"][0] < sop_rank("2025ResultSumm.pdf") < packet["ranks"][1]
 
 
 def test_list_folder_files_returns_names():

@@ -96,6 +96,14 @@ def display_label(filename: str, page: int = 0, page_count: int = 1) -> str:
     return filename
 
 
+def rank_for_label(label: str, fallback: int) -> int:
+    """Place a split page by its section title, not by the parent PDF name."""
+    found = _best_section(label)
+    if not found:
+        return fallback
+    return found[0]
+
+
 def list_file_meta(name: str, size: int, pages: int) -> dict:
     split = should_split_pages(name, pages)
     labels = (
@@ -103,12 +111,14 @@ def list_file_meta(name: str, size: int, pages: int) -> dict:
         if split
         else [display_label(name)]
     )
+    file_rank = sop_rank(name)
     return {
         "name": name,
         "size": size,
         "pages": pages,
         "split": split,
-        "rank": sop_rank(name),
+        "rank": file_rank,
+        "ranks": [rank_for_label(label, file_rank) for label in labels],
         "label": labels[0],
         "labels": labels,
     }

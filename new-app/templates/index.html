@@ -740,18 +740,20 @@
       const size = meta.size || 0;
       const rank = Number(meta && meta.rank);
       const apiLabels = Array.isArray(meta && meta.labels) ? meta.labels : [];
+      const pageRanks = Array.isArray(meta && meta.ranks) ? meta.ranks : [];
       const cover = isCoverFile(name);
       const titles = coverPageTitles();
       const split = meta.split === true || (cover && pages > 1);
       if (split && pages > 1) {
         const rows = [];
         for (let page = 1; page <= pages; page += 1) {
+          const pageRank = Number(pageRanks[page - 1]);
           rows.push(Object.assign({
             name: name,
             size: size,
             page: page,
             pageCount: pages,
-            rank: Number.isFinite(rank) ? rank : (cover ? 0 : 1000),
+            rank: Number.isFinite(pageRank) ? pageRank : (Number.isFinite(rank) ? rank : (cover ? 0 : 1000)),
             label: titles[page - 1] || apiLabels[page - 1] || ("Cover Letter page " + page),
           }, extra));
         }

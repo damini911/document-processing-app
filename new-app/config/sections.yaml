@@ -1,6 +1,5 @@
 # Combine order for Auto-order (missing files are skipped).
-# Front packet matches the page outline: Cover → Action Required → excess notices
-# → 415 info → sample letters → Year End Recap → Compliance Reports.
+# Cover Letter, then Result Summary, then Action Required, then the remaining reports.
 
 expected_order:
   - name: Cover Letter
@@ -28,9 +27,30 @@ expected_order:
       - Compliance Report 1
       - Compliance Report 2
       - Compliance Report 3
+  - name: Test Summary
+    aliases: ["Test Summary", "Result Summary", "Compliance Summary", "ResultSumm", "Result"]
   - name: Action Required
     aliases: ["Action Required", "IMMEDIATE ACTION REQUIRED"]
     label: Action required
+  - name: 415 Failure Information
+    label: 415 Failure information
+    aliases: ["415 Failure information", "415 Failure Information", "415(c) Failure", "IRC 415) Test Failure"]
+  - name: Year End Recap
+    label: Year End Recap
+    aliases: ["Year End Recap", "Year-End Recap", "Important Information"]
+  - name: Compliance Reports
+    label: Compliance Reports
+    aliases: ["Compliance Testing Reports", "Compliance and Administrative", "Compliance Reports", "Compliance Report", "Overview and Descriptions"]
+  - name: Valuation Reports
+    aliases: ["Valuation Reports"]
+  - name: Summary of Compliance Test Results
+    aliases: ["Summary of Compliance Test Results"]
+  - name: Compensation Limit Failure Summary
+    aliases: ["Compensation Limit Failure", "SHMaVar", "SHMa"]
+  - name: Combined Testing Report
+    aliases: ["Combined Testing Report", "Combined Compliance Testing Report"]
+  - name: Failed Test Notice
+    aliases: ["Failed Test Notice", "Failure Notice", "Excess Summary", "Excess Return Notice", "Failed Compliance Testing"]
   - name: ADP/ACP Excess After 12 Months Current
     label: ADP/ACP Failure excess page after 12 months (Current year Testing Method)
     aliases:
@@ -51,9 +71,6 @@ expected_order:
       - "ADP/ACP Failure excess page Current year"
       - "Failed Compliance Testing (Current"
       - "excess page Current year"
-  - name: 415 Failure Information
-    label: 415 Failure information
-    aliases: ["415 Failure information", "415 Failure Information", "IRC 415) Test Failure"]
   - name: ADP/ACP Failure Letter
     label: ADP/ACP Failure letter
     aliases: ["ADP/ACP Failure letter", "ADP Failure letter", "ACP Failure letter", "Sample Letter ADP", "Sample Letter ACP"]
@@ -63,26 +80,12 @@ expected_order:
   - name: 415 Failure Letter
     label: 415 Failure letter
     aliases: ["415 Failure letter", "Sample Letter 415"]
-  - name: Year End Recap
-    label: Year End Recap
-    aliases: ["Year End Recap", "Year-End Recap", "Important Information"]
-  - name: Compliance Reports
-    label: Compliance Reports
-    aliases: ["Compliance and Administrative", "Compliance Reports", "Overview and Descriptions"]
-  - name: Test Summary
-    aliases: ["Test Summary", "Compliance Summary", "ResultSumm", "Result"]
-  - name: Compensation Limit Failure Summary
-    aliases: ["Compensation Limit Failure", "SHMaVar", "SHMa"]
-  - name: Combined Testing Report
-    aliases: ["Combined Testing Report"]
-  - name: Failed Test Notice
-    aliases: ["Failed Test Notice", "Failure Notice", "Excess Summary", "Excess Return Notice", "Failed Compliance Testing"]
   - name: Variance
     aliases: ["Variance Report", "Variance", "MaVar"]
   - name: PS Variance
-    aliases: ["PSVar"]
+    aliases: ["PS Variance Report", "PS Variance", "PSVar"]
   - name: SHNE Variance
-    aliases: ["SHNEVar"]
+    aliases: ["SHNE Variance Report", "SHNE Variance", "SHNEVar"]
   - name: Contribution Analysis
     aliases: ["Contribution Analysis", "ContriAnalysis", "Contri"]
   - name: HCE/Key
@@ -98,7 +101,7 @@ expected_order:
   - name: "401(a)(4)"
     aliases: ["401(a)(4)", "401(a)(4) Test", "401a4", "401a"]
   - name: Average Benefit Percentage Test
-    aliases: ["Average Benefit Percentage", "ABPT"]
+    aliases: ["Average Benefit Percentage", "Average Benefits", "ABPT"]
   - name: BRF
     aliases: ["Benefits, Rights and Features", "BRF Test", "BRF"]
   - name: "414(s)"
