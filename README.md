@@ -299,3 +299,329 @@ unknown = include everything
 which is exactly what your output looks like.
 
 My strongest suspicion is that the Result Summary PDF is not being used to control page removal, or the pass/fail extraction from the summary page is failing, causing all conditional templates to remain in the assembled package.
+
+------------------------------------------
+
+You are a senior Python architect and pension valuation domain analyst.
+
+Analyze the entire MOA valuation package assembly workflow.
+
+Context:
+
+Current issue:
+
+The application successfully merges PDFs but includes pages that should be removed based on business rules.
+
+Example:
+
+Plan Type = 403(b)
+
+ACP Method = Current
+
+HCE Current = Yes
+
+HCE Future = Yes
+
+Top Heavy = 403b N/A
+
+Result Summary shows:
+
+410(b) = Pass
+
+402(g) = Pass
+
+415(c) = Pass
+
+ACP = Pass
+
+Expected package:
+
+- Cover Letter
+
+- Test Summary
+
+- Action Required (only "No Immediate Action Required")
+
+- Year End Recap
+
+- Compliance Overview
+
+- Contribution Analysis
+
+- HCE
+
+- Future HCE
+
+- ACP Test
+
+- 402(g)
+
+- 415
+
+- Census
+
+Should NOT include:
+
+- ACP Failure Notice
+
+- ACP Sample Letter
+
+- ACP Return Letter
+
+- 402(g) Sample Letter
+
+- 415 Failure Information
+
+- 415 Sample Letter
+
+- Excess Summary
+
+- Top Heavy Section
+
+Current application includes many failure-related pages.
+
+TASKS
+
+1. Review the following files:
+
+services/orchestrator.py
+
+services/pdf_extractor.py
+
+services/rules_engine.py
+
+services/action_required.py
+
+services/package_builder.py
+
+services/file_order.py
+
+services/plan_profile_service.py
+
+models/plan_profile.py
+
+config/field_patterns.py
+
+config/rules.yaml
+
+config/403b.yaml
+
+config/sections.yaml
+
+config/package_map.yaml
+
+config/paragraphs.yaml
+
+2. Produce a report showing:
+
+Business Rule
+
+Source Field
+
+Code Location
+
+Current Logic
+
+Expected Logic
+
+Gap
+
+3. Verify every field source.
+
+Use this source-of-truth matrix:
+
+Excel Fields:
+
+- plan_type
+
+- hce_current
+
+- hce_future
+
+- top_heavy
+
+- acp_method
+
+- acp_reclassified
+
+- annual_allocation
+
+Result Summary Fields:
+
+- adp_pass_fail
+
+- acp_pass_fail
+
+- fail_402g
+
+- fail_415
+
+- fail_410b
+
+- top_heavy_percent
+
+ACP Report:
+
+- QNEC amounts
+
+- returns required
+
+402(g) Report:
+
+- after_4_15 exception
+
+Variance Report:
+
+- existence only
+
+4. Validate these rules:
+
+Rule A:
+
+If ACP Pass:
+
+remove ACP failure notices
+
+remove ACP sample letters
+
+remove ACP return letters
+
+Rule B:
+
+If 402(g) Pass:
+
+remove 402(g) sample letter
+
+Rule C:
+
+If 415 Pass:
+
+remove 415 sample letter
+
+remove 415 failure information
+
+Rule D:
+
+If Top Heavy = "403b N/A":
+
+remove Top Heavy section
+
+Rule E:
+
+If no failures exist:
+
+Action Required page must contain only:
+
+"NO IMMEDIATE ACTION REQUIRED"
+
+Rule F:
+
+403(b) plans:
+
+- ADP bookmarks should not be created
+
+- HCE/KEY becomes HCE
+
+- ACP bookmark instead of ADP/ACP bookmark
+
+- missing detailed 410(b) report is allowed
+
+Rule G:
+
+Filename must use beginning plan year:
+
+07/01/2025 - 06/30/2026
+
+=> 2025
+
+5. Trace the exact decision path for:
+
+Plan 800643
+
+Produce:
+
+{
+
+  "plan_type": "...",
+
+  "hce_current": ...,
+
+  "hce_future": ...,
+
+  "top_heavy": ...,
+
+  "acp_method": "...",
+
+  "acp_failed": ...,
+
+  "fail_402g": ...,
+
+  "fail_415": ...,
+
+  "returns_required": ...,
+
+  "selected_sections": [...],
+
+  "removed_sections": [...]
+
+}
+
+6. Look for logic that:
+
+- includes pages merely because a PDF exists
+
+instead of
+
+- including pages because the business rule says to keep them
+
+7. Generate a code fix plan with exact file names, functions, and code locations that need modification.
+
+Do not make assumptions.
+
+Trace values from extraction -> PlanProfile -> Rules Engine -> Assembly.
+
+---------------
+
+Add debug logging to the valuation assembly process.
+
+Before assembly, generate profile_debug.json containing:
+
+{
+
+  "plan_type": "",
+
+  "testing_method": "",
+
+  "hce_current": false,
+
+  "hce_future": false,
+
+  "top_heavy": false,
+
+  "top_heavy_percent": null,
+
+  "adp_failed": false,
+
+  "acp_failed": false,
+
+  "fail_402g": false,
+
+  "fail_415": false,
+
+  "returns_required": false,
+
+  "variance_report": false,
+
+  "contributions_required": false,
+
+  "fail_402g_after_deadline": false,
+
+  "selected_sections": [],
+
+  "removed_sections": []
+
+}
+
+Output this file for every assembly run.
+
+Then trace exactly why each section was included or excluded.
