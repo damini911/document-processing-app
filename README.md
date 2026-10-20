@@ -1,3 +1,130 @@
+Please find the keywords for the naming conversation of valuation file.
+
+ 
+
+
+
+Naming Convention format
+
+Reports names in the folder for 12/31/2025 PYE
+
+Keywords to identify
+
+Plan id YYYY plan type Valuation Pkg
+
+123456 2025 401k Valuation Pkg
+
+401k
+
+YYYYResultSumm
+
+2025ResultSumm
+
+Result
+
+YYYYHCEkey
+
+2025HCEKey
+
+HCEKey
+
+YYYYFYHCE
+
+2026FYHCE
+
+FYHCE
+
+YYYYADP/ACP
+
+2025ADP/ACP
+
+ADP
+
+YYYY410B
+
+2025410B
+
+410
+
+YYYYMaVar
+
+2025MaVar
+
+MaVar
+
+YYYYSHMaVar
+
+2025SHMaVar
+
+SHMaVar
+
+YYYYPSVar
+
+2025PSVar
+
+PSVar
+
+YYYYSHNEVar
+
+2025SHNEVar
+
+SHNEVar
+
+YYYY402G
+
+2025402G
+
+402
+
+YYYYContriAnalysis
+
+2025ContriAnalysis
+
+Contri
+
+YYYYTH
+
+2025TH or 2025Top Heavy
+
+TH or Top Heavy
+
+YYYY415
+
+2025415
+
+415
+
+YYYYCensus
+
+2025Census
+
+Census
+
+YYYY401a4
+
+2025401a4
+
+401a
+
+YYYYABPT
+
+2025ABPT
+
+ABPT
+
+YYYY414s
+
+2025414s
+
+414s
+
+ 
+
+ 
+
+Thanks,
+Haribaskar B
+
 Act as a Senior QA Engineer, Pension Testing SME, and Python Code Reviewer.
 
 Your task is to perform a complete verification of the MOA Valuation Package Assembly application.
